@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giornata dello Studente - Prenotazioni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Giornata dello Studente - Prenotazioni Lezioni</h1>
+            <p>Seleziona una lezione per ogni ora</p>
+        </header>
+        
+        <main>
+            <form id="bookingForm">
+                <label for="studentName">Nome e cognome dello Studente:</label>
+                <input type="text" id="studentName" name="studentName" required>
+                <label for="studentClass">Classe:</label>
+                <select id="studentClass" name="studentClass" required>
+                    <option value="">Seleziona la tua classe</option>
+                    <option value="1A">1A</option>
+                    <option value="1A LES">1A LES</option>
+                    <option value="1ASU">1ASU</option>
+                    <option value="1B">1B</option>
+                    <option value="1BLES">1BLES</option>
+                    <option value="1BSU">1BSU</option>
+                    <option value="1CLES">1CLES</option>
+                    <option value="1CSU">1CSU</option>
+                    <option value="1DL">1DL</option>
+                    <option value="1DSU">1DSU</option>
+                    <option value="1EL">1EL</option>
+                    <option value="1FL">1FL</option>
+                    <option value="1GL">1GL</option>
+                    <option value="2A">2A</option>
+                    <option value="2A LES">2A LES</option>
+                    <option value="2ASU">2ASU</option>
+                    <option value="2B">2B</option>
+                    <option value="2BSU">2BSU</option>
+                    <option value="2CSU">2CSU</option>
+                    <option value="2DL">2DL</option>
+                    <option value="2DSU">2DSU</option>
+                    <option value="2EL">2EL</option>
+                    <option value="2FL">2FL</option>
+                    <option value="2GL">2GL</option>
+                    <option value="2HL">2HL</option>
+                    <option value="3A">3A</option>
+                    <option value="3A LES">3A LES</option>
+                    <option value="3ASU">3ASU</option>
+                    <option value="3B">3B</option>
+                    <option value="3B LES">3B LES</option>
+                    <option value="3BSU">3BSU</option>
+                    <option value="3CSU">3CSU</option>
+                    <option value="3DL">3DL</option>
+                    <option value="3EL">3EL</option>
+                    <option value="3FL">3FL</option>
+                    <option value="3GL">3GL</option>
+                    <option value="4A">4A</option>
+                    <option value="4A LES">4A LES</option>
+                    <option value="4ASU">4ASU</option>
+                    <option value="4B">4B</option>
+                    <option value="4BSU">4BSU</option>
+                    <option value="4CSU">4CSU</option>
+                    <option value="4DL">4DL</option>
+                    <option value="4EL">4EL</option>
+                    <option value="4FL">4FL</option>
+                    <option value="4GL">4GL</option>
+                    <option value="4HL">4HL</option>
+                    <option value="5A">5A</option>
+                    <option value="5A LES">5A LES</option>
+                    <option value="5ASU">5ASU</option>
+                    <option value="5B">5B</option>
+                    <option value="5BSU">5BSU</option>
+                    <option value="5CSU">5CSU</option>
+                    <option value="5DL">5DL</option>
+                    <option value="5EL">5EL</option>
+                    <option value="5FL">5FL</option>
+                    <option value="5GL">5GL</option>
+                </select>
+                
+                <label for="autoDay">Giornata di autogestione:</label>
+                <select id="autoDay" name="autoDay" required>
+                    <option value="">Seleziona la data</option>
+                    <option value="7marzo">Venerdì 7 marzo (Succursale)</option>
+                    <option value="14marzo">Venerdì 14 marzo (Sede)</option>
+                </select>
+                
+                <h2>Prima ora</h2>
+                <label for="lesson1">Scegli la Lezione:</label>
+                <select id="lesson1" name="lesson1" required>
+                    <option value="bachata">Classe Bachata</option>
+                    <option value="taylor_swift">Taylor Swift Fans</option>
+                    <option value="reazione_catena">Reazione a Catena</option>
+                    <option value="spettacolo_magia">Spettacolo Magia</option>
+                    <option value="studio_autonomo">Studio Autonomo (Prima Classe)</option>
+                    <option value="studio_autonomo">Studio Autonomo (Seconda Classe)</option>
+                   <option value="studio_autonomo">Studio Autonomo (Terza Classe)</option>
+                   <option value="studio_autonomo">Studio Autonomo (Quarta Classe)</option>
+                    <option value="just_dance">Just Dance</option>
+                    <option value="just_dance2">Just Dance (Seconda classe)</option>
+                    <option value="maglia">Lavoro a Maglia Base</option>
+                    <option value="clash_royale">Torneo di Clash Royale</option>
+                    <option value="film_comici">Cortometraggio di Film Comici Italiani</option>
+                    <option value="canto_chitarra">Corso di Canto e Chitarra</option>
+                    <option value="mahjong">Torneo di Mahjong</option>
+                    <option value="lupus">Lupus (Gioco di Carte)</option>
+                    <option value="gossip">Gossip e Ascolto</option>
+                    <option value="bachata2">Bachata (Seconda Classe)</option>
+                    <option value="squid_game">Squid Game (Gioco)</option>
+                    <option value="recitazione">Recitazione e Teatro</option>
+                    <option value="rievocazione">Rievocazione Storica - FlosFerri</option>
+                    <option value="pubblica_assistenza">Pubblica Assistenza</option>
+                    <option value="disturbi_alimentari">Disturbi Alimentari</option>
+                    <option value="social">Social</option>
+                    <option value="moda_sostenibile">Moda Sostenibile</option>
+                    <option value="dibattiti">Dibattiti / Argomenti di Attualità</option>
+                    <option value="parita_genere">Parità di Genere</option>
+                    <option value="colonialismo">Colonialismo Italiano - Lezione di Storia</option>
+                    <option value="legalizzazione_cannabis">Dibattito Legalizzazione Cannabis</option>
+                    <option value="studenti_internazionali">Studenti Internazionali UNIBO</option>
+                    <option value="geopolitica">Lezione di Geopolitica</option>
+                    <option value="Cultura Giapponese">Cultura Giapponese</option>
+                </select>
+
+                <h2>Seconda ora</h2>
+                <select id="lesson2" name="lesson2" required>
+                    <option value="bachata">Classe Bachata</option>
+                    <option value="taylor_swift">Taylor Swift Fans</option>
+                    <option value="reazione_catena">Reazione a Catena</option>
+                    <option value="spettacolo_magia">Spettacolo Magia</option>
+                    <option value="studio_autonomo">Studio Autonomo (Prima Classe)</option>
+                    <option value="studio_autonomo">Studio Autonomo (Seconda Classe)</option>
+                   <option value="studio_autonomo">Studio Autonomo (Terza Classe)</option>
+                   <option value="studio_autonomo">Studio Autonomo (Quarta Classe)</option>
+                    <option value="just_dance">Just Dance</option>
+                    <option value="just_dance2">Just Dance (Seconda classe)</option>
+                    <option value="maglia">Lavoro a Maglia Base</option>
+                    <option value="clash_royale">Torneo di Clash Royale</option>
+                    <option value="film_comici">Cortometraggio di Film Comici Italiani</option>
+                    <option value="canto_chitarra">Corso di Canto e Chitarra</option>
+                    <option value="mahjong">Torneo di Mahjong</option>
+                    <option value="lupus">Lupus (Gioco di Carte)</option>
+                    <option value="gossip">Gossip e Ascolto</option>
+                    <option value="bachata2">Bachata (Seconda Classe)</option>
+                    <option value="squid_game">Squid Game (Gioco)</option>
+                    <option value="recitazione">Recitazione e Teatro</option>
+                    <option value="rievocazione">Rievocazione Storica - FlosFerri</option>
+                    <option value="pubblica_assistenza">Pubblica Assistenza</option>
+                    <option value="disturbi_alimentari">Disturbi Alimentari</option>
+                    <option value="social">Social</option>
+                    <option value="moda_sostenibile">Moda Sostenibile</option>
+                    <option value="dibattiti">Dibattiti / Argomenti di Attualità</option>
+                    <option value="parita_genere">Parità di Genere</option>
+                    <option value="colonialismo">Colonialismo Italiano - Lezione di Storia</option>
+                    <option value="legalizzazione_cannabis">Dibattito Legalizzazione Cannabis</option>
+                    <option value="studenti_internazionali">Studenti Internazionali UNIBO</option>
+                    <option value="geopolitica">Lezione di Geopolitica</option>
+                    <option value="Cultura Giapponese">Cultura Giapponese</option>
+                </select>
+
+               <h2>Terza ora</h2>
+                <select id="lesson3" name="lesson3" required>
+                    <option value="bachata">Classe Bachata</option>
+                    <option value="taylor_swift">Taylor Swift Fans</option>
+                    <option value="reazione_catena">Reazione a Catena</option>
+                    <option value="spettacolo_magia">Spettacolo Magia</option>
+                    <option value="studio_autonomo">Studio Autonomo (Prima Classe)</option>
+                    <option value="studio_autonomo">Studio Autonomo (Seconda Classe)</option>
+                   <option value="studio_autonomo">Studio Autonomo (Terza Classe)</option>
+                   <option value="studio_autonomo">Studio Autonomo (Quarta Classe)</option>
+                    <option value="just_dance">Just Dance</option>
+                    <option value="just_dance2">Just Dance (Seconda classe)</option>
+                    <option value="maglia">Lavoro a Maglia Base</option>
+                    <option value="clash_royale">Torneo di Clash Royale</option>
+                    <option value="film_comici">Cortometraggio di Film Comici Italiani</option>
+                    <option value="canto_chitarra">Corso di Canto e Chitarra</option>
+                    <option value="mahjong">Torneo di Mahjong</option>
+                    <option value="lupus">Lupus (Gioco di Carte)</option>
+                    <option value="gossip">Gossip e Ascolto</option>
+                    <option value="bachata2">Bachata (Seconda Classe)</option>
+                    <option value="squid_game">Squid Game (Gioco)</option>
+                    <option value="recitazione">Recitazione e Teatro</option>
+                    <option value="rievocazione">Rievocazione Storica - FlosFerri</option>
+                    <option value="pubblica_assistenza">Pubblica Assistenza</option>
+                    <option value="disturbi_alimentari">Disturbi Alimentari</option>
+                    <option value="social">Social</option>
+                    <option value="moda_sostenibile">Moda Sostenibile</option>
+                    <option value="dibattiti">Dibattiti / Argomenti di Attualità</option>
+                    <option value="parita_genere">Parità di Genere</option>
+                    <option value="colonialismo">Colonialismo Italiano - Lezione di Storia</option>
+                    <option value="legalizzazione_cannabis">Dibattito Legalizzazione Cannabis</option>
+                    <option value="studenti_internazionali">Studenti Internazionali UNIBO</option>
+                    <option value="geopolitica">Lezione di Geopolitica</option>
+                    <option value="Cultura Giapponese">Cultura Giapponese</option>
+                </select>
+
+               <h2>Quarta ora</h2>
+                <select id="lesson4" name="lesson4" required>
+                    <option value="bachata">Classe Bachata</option>
+                    <option value="taylor_swift">Taylor Swift Fans</option>
+                    <option value="reazione_catena">Reazione a Catena</option>
+                    <option value="spettacolo_magia">Spettacolo Magia</option>
+                    <option value="studio_autonomo">Studio Autonomo (Prima Classe)</option>
+                    <option value="studio_autonomo">Studio Autonomo (Seconda Classe)</option>
+                   <option value="studio_autonomo">Studio Autonomo (Terza Classe)</option>
+                   <option value="studio_autonomo">Studio Autonomo (Quarta Classe)</option>
+                    <option value="just_dance">Just Dance</option>
+                    <option value="just_dance2">Just Dance (Seconda classe)</option>
+                    <option value="maglia">Lavoro a Maglia Base</option>
+                    <option value="clash_royale">Torneo di Clash Royale</option>
+                    <option value="film_comici">Cortometraggio di Film Comici Italiani</option>
+                    <option value="canto_chitarra">Corso di Canto e Chitarra</option>
+                    <option value="mahjong">Torneo di Mahjong</option>
+                    <option value="lupus">Lupus (Gioco di Carte)</option>
+                    <option value="gossip">Gossip e Ascolto</option>
+                    <option value="bachata2">Bachata (Seconda Classe)</option>
+                    <option value="squid_game">Squid Game (Gioco)</option>
+                    <option value="recitazione">Recitazione e Teatro</option>
+                    <option value="rievocazione"></option>
+                    <option value="pubblica_assistenza">Pubblica Assistenza</option>
+                    <option value="disturbi_alimentari">Disturbi Alimentari</option>
+                    <option value="social">Social</option>
+                    <option value="moda_sostenibile">Moda Sostenibile</option>
+                    <option value="dibattiti">Dibattiti / Argomenti di Attualità</option>
+                    <option value="parita_genere">Parità di Genere</option>
+                    <option value="colonialismo">Colonialismo Italiano - Lezione di Storia</option>
+                    <option value="legalizzazione_cannabis">Dibattito Legalizzazione Cannabis</option>
+                    <option value="studenti_internazionali">Studenti Internazionali UNIBO</option>
+                    <option value="geopolitica">Lezione di Geopolitica</option>
+                    <option value="Cultura Giapponese">Cultura Giapponese</option>
+                </select>
+            
+
+               <h2>Quinta ora</h2>
+                <select id="lesson5" name="lesson5" required>
+                    <option value="bachata">Classe Bachata</option>
+                    <option value="taylor_swift">Taylor Swift Fans</option>
+                    <option value="reazione_catena">Reazione a Catena</option>
+                    <option value="spettacolo_magia">Spettacolo Magia</option>
+                    <option value="studio_autonomo">Studio Autonomo (Prima Classe)</option>
+                    <option value="studio_autonomo">Studio Autonomo (Seconda Classe)</option>
+                   <option value="studio_autonomo">Studio Autonomo (Terza Classe)</option>
+                   <option value="studio_autonomo">Studio Autonomo (Quarta Classe)</option>
+                    <option value="just_dance">Just Dance</option>
+                    <option value="just_dance2">Just Dance (Seconda classe)</option>
+                    <option value="maglia">Lavoro a Maglia Base</option>
+                    <option value="clash_royale">Torneo di Clash Royale</option>
+                    <option value="film_comici">Cortometraggio di Film Comici Italiani</option>
+                    <option value="canto_chitarra">Corso di Canto e Chitarra</option>
+                    <option value="mahjong">Torneo di Mahjong</option>
+                    <option value="lupus">Lupus (Gioco di Carte)</option>
+                    <option value="gossip">Gossip e Ascolto</option>
+                    <option value="bachata2">Bachata (Seconda Classe)</option>
+                    <option value="squid_game">Squid Game (Gioco)</option>
+                    <option value="recitazione">Recitazione e Teatro</option>
+                    <option value="rievocazione">Rievocazione Storica - FlosFerri</option>
+                    <option value="pubblica_assistenza">Pubblica Assistenza</option>
+                    <option value="disturbi_alimentari">Disturbi Alimentari</option>
+                    <option value="social">Social</option>
+                    <option value="moda_sostenibile">Moda Sostenibile</option>
+                    <option value="dibattiti">Dibattiti / Argomenti di Attualità</option>
+                    <option value="parita_genere">Parità di Genere</option>
+                    <option value="colonialismo">Colonialismo Italiano - Lezione di Storia</option>
+                    <option value="legalizzazione_cannabis">Dibattito Legalizzazione Cannabis</option>
+                    <option value="studenti_internazionali">Studenti Internazionali UNIBO</option>
+                    <option value="geopolitica">Lezione di Geopolitica</option>
+                    <option value="Cultura Giapponese">Cultura Giapponese</option>
+                </select>
+                <button type="submit">Prenota</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; Giornata dello Studente 2024/2025 - Se una lezione ha raggiunto il numero massimo di studenti non sarà più disponibile. Sito realizzato da Pamela Tiepo e Chiara Balestra</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
