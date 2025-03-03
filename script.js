@@ -1,20 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
-   let bottone = document.getElementById("prenotaBtn");
+    let bottone = document.getElementById("prenotaBtn");
     let messaggio = document.getElementById("messaggio");
+    ;
 
     let dataApertura = new Date("2025-03-03T16:00:00");
+    console.log("Data di apertura:", dataApertura); // Debug: verifica se la data di apertura è corretta
     
     function controllaOrario() {
         let oraAttuale = new Date();
+        console.log("Ora attuale:", oraAttuale);  // Debug: verifica se la funzione viene chiamata
+        console.log("Data di apertura:", dataApertura);  // Verifica che la data di apertura sia corretta
+
         if (oraAttuale >= dataApertura) {
+            console.log("Il pulsante viene abilitato!");  // Verifica che la condizione venga soddisfatta
             bottone.disabled = false;
-            bottone.style.display = "block"; 
+            bottone.style.display = "block";
             messaggio.innerText = ""; 
         } else {
+            console.log("Il pulsante viene disabilitato.");  // Verifica che la condizione non venga soddisfatta
             bottone.disabled = true;
             bottone.style.display = "none";
             messaggio.innerText = "Le prenotazioni apriranno lunedì 3 marzo alle 16:00!";
         }
+
     }
 
     controllaOrario();  
@@ -44,7 +52,7 @@ function aggiornaLezioni() {
         });
     }).getLezioni(giornata);
 }
-<button id="prenota" type="submit">Prenota</button>
+
 
 
 // Invio dati al foglio Google
@@ -71,7 +79,7 @@ function inviaDati() {
     }).salvaPrenotazione(dati);
 }
 document.addEventListener("DOMContentLoaded", function() {
-    var pulsante = document.getElementById("prenota"); 
+    var pulsante = document.getElementById("prenotaBtr"); 
 
     if (pulsante) {
         pulsante.addEventListener("click", function() {
