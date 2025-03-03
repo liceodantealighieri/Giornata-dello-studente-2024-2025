@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
    let bottone = document.getElementById("prenotaBtn");
     let messaggio = document.getElementById("messaggio");
 
-    let dataApertura = new Date(); // Permette di testare subito
+    let dataApertura = new Date("2025-03-03T16:00:00");
     
     function controllaOrario() {
         let oraAttuale = new Date();
